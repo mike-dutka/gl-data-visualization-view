@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE072EB8166CD2360085A540 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE072EB7166CD2360085A540 /* UIKit.framework */; };
+		CE072EBA166CD2360085A540 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE072EB9166CD2360085A540 /* Foundation.framework */; };
+		CE072EBC166CD2360085A540 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE072EBB166CD2360085A540 /* CoreGraphics.framework */; };
+		CE072EC2166CD2360085A540 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE072EC0166CD2360085A540 /* InfoPlist.strings */; };
+		CE072EC4166CD2360085A540 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE072EC3166CD2360085A540 /* main.m */; };
+		CE072EC8166CD2360085A540 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE072EC7166CD2360085A540 /* AppDelegate.m */; };
+		CE072ECA166CD2360085A540 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE072EC9166CD2360085A540 /* Default.png */; };
+		CE072ECC166CD2360085A540 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE072ECB166CD2360085A540 /* Default@2x.png */; };
+		CE072ECE166CD2360085A540 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE072ECD166CD2360085A540 /* Default-568h@2x.png */; };
+		CE072ED1166CD2360085A540 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE072ED0166CD2360085A540 /* ViewController.m */; };
+		CE072ED4166CD2360085A540 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE072ED2166CD2360085A540 /* ViewController.xib */; };
+		CE072EE7166CD4AF0085A540 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE072EE6166CD4AF0085A540 /* QuartzCore.framework */; };
+		CE072EE9166CD4DD0085A540 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE072EE8166CD4DD0085A540 /* OpenGLES.framework */; };
+		CE072F7A16762C170085A540 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE072F7916762C160085A540 /* AudioToolbox.framework */; };
+		CEF1AEF61679E654004C8276 /* GLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AECF1679E654004C8276 /* GLAdditions.m */; };
+		CEF1AEF71679E654004C8276 /* GLDataVisualizationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AED11679E654004C8276 /* GLDataVisualizationView.m */; };
+		CEF1AEF81679E654004C8276 /* GLVisualizerSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AED31679E654004C8276 /* GLVisualizerSceneController.m */; };
+		CEF1AEF91679E654004C8276 /* GLVisualizerMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AED71679E654004C8276 /* GLVisualizerMesh.m */; };
+		CEF1AEFA1679E654004C8276 /* GLVisualizerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AED91679E654004C8276 /* GLVisualizerScene.m */; };
+		CEF1AEFB1679E654004C8276 /* GLVisualizerSceneObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEDB1679E654004C8276 /* GLVisualizerSceneObject.m */; };
+		CEF1AEFC1679E654004C8276 /* GLAnalogMeterNeedleMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEDE1679E654004C8276 /* GLAnalogMeterNeedleMesh.m */; };
+		CEF1AEFD1679E654004C8276 /* GLAnalogMeterNeedleSceneObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEE01679E654004C8276 /* GLAnalogMeterNeedleSceneObject.m */; };
+		CEF1AEFE1679E654004C8276 /* GLAnalogMeterPlateMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEE21679E654004C8276 /* GLAnalogMeterPlateMesh.m */; };
+		CEF1AEFF1679E654004C8276 /* GLAnalogMeterPlateSceneObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEE41679E654004C8276 /* GLAnalogMeterPlateSceneObject.m */; };
+		CEF1AF001679E654004C8276 /* GLAnalogMeterVisualizerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEE61679E654004C8276 /* GLAnalogMeterVisualizerScene.m */; };
+		CEF1AF011679E654004C8276 /* GLStereoAnalogMeterVisualizerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEE81679E654004C8276 /* GLStereoAnalogMeterVisualizerScene.m */; };
+		CEF1AF021679E654004C8276 /* GLDefaultVisualizerMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEEE1679E654004C8276 /* GLDefaultVisualizerMesh.m */; };
+		CEF1AF031679E654004C8276 /* GLDefaultVisualizerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEF01679E654004C8276 /* GLDefaultVisualizerScene.m */; };
+		CEF1AF041679E654004C8276 /* GLDefaultVisualizerSceneObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEF21679E654004C8276 /* GLDefaultVisualizerSceneObject.m */; };
+		CEF1AF051679E654004C8276 /* GLVisualizationStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEF41679E654004C8276 /* GLVisualizationStyleManager.m */; };
+		CEF1AF0D167A092B004C8276 /* GLMaterialController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AF0C167A092B004C8276 /* GLMaterialController.m */; };
+		CEF1AF13167A34D8004C8276 /* GLAnalogMeterAtlas.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF1AF12167A34D8004C8276 /* GLAnalogMeterAtlas.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE072EB3166CD2360085A540 /* SoundVisualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundVisualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE072EB7166CD2360085A540 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE072EB9166CD2360085A540 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE072EBB166CD2360085A540 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE072EBF166CD2360085A540 /* SoundVisualizer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundVisualizer-Info.plist"; sourceTree = "<group>"; };
+		CE072EC1166CD2360085A540 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE072EC3166CD2360085A540 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE072EC5166CD2360085A540 /* SoundVisualizer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundVisualizer-Prefix.pch"; sourceTree = "<group>"; };
+		CE072EC6166CD2360085A540 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE072EC7166CD2360085A540 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE072EC9166CD2360085A540 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CE072ECB166CD2360085A540 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CE072ECD166CD2360085A540 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE072ECF166CD2360085A540 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE072ED0166CD2360085A540 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE072ED3166CD2360085A540 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CE072EE6166CD4AF0085A540 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CE072EE8166CD4DD0085A540 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CE072F7916762C160085A540 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CEF1AECE1679E654004C8276 /* GLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLAdditions.h; sourceTree = "<group>"; };
+		CEF1AECF1679E654004C8276 /* GLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLAdditions.m; sourceTree = "<group>"; };
+		CEF1AED01679E654004C8276 /* GLDataVisualizationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDataVisualizationView.h; sourceTree = "<group>"; };
+		CEF1AED11679E654004C8276 /* GLDataVisualizationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDataVisualizationView.m; sourceTree = "<group>"; };
+		CEF1AED21679E654004C8276 /* GLVisualizerSceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVisualizerSceneController.h; sourceTree = "<group>"; };
+		CEF1AED31679E654004C8276 /* GLVisualizerSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVisualizerSceneController.m; sourceTree = "<group>"; };
+		CEF1AED61679E654004C8276 /* GLVisualizerMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVisualizerMesh.h; sourceTree = "<group>"; };
+		CEF1AED71679E654004C8276 /* GLVisualizerMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVisualizerMesh.m; sourceTree = "<group>"; };
+		CEF1AED81679E654004C8276 /* GLVisualizerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVisualizerScene.h; sourceTree = "<group>"; };
+		CEF1AED91679E654004C8276 /* GLVisualizerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVisualizerScene.m; sourceTree = "<group>"; };
+		CEF1AEDA1679E654004C8276 /* GLVisualizerSceneObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVisualizerSceneObject.h; sourceTree = "<group>"; };
+		CEF1AEDB1679E654004C8276 /* GLVisualizerSceneObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVisualizerSceneObject.m; sourceTree = "<group>"; };
+		CEF1AEDD1679E654004C8276 /* GLAnalogMeterNeedleMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLAnalogMeterNeedleMesh.h; sourceTree = "<group>"; };
+		CEF1AEDE1679E654004C8276 /* GLAnalogMeterNeedleMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLAnalogMeterNeedleMesh.m; sourceTree = "<group>"; };
+		CEF1AEDF1679E654004C8276 /* GLAnalogMeterNeedleSceneObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLAnalogMeterNeedleSceneObject.h; sourceTree = "<group>"; };
+		CEF1AEE01679E654004C8276 /* GLAnalogMeterNeedleSceneObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLAnalogMeterNeedleSceneObject.m; sourceTree = "<group>"; };
+		CEF1AEE11679E654004C8276 /* GLAnalogMeterPlateMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLAnalogMeterPlateMesh.h; sourceTree = "<group>"; };
+		CEF1AEE21679E654004C8276 /* GLAnalogMeterPlateMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLAnalogMeterPlateMesh.m; sourceTree = "<group>"; };
+		CEF1AEE31679E654004C8276 /* GLAnalogMeterPlateSceneObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLAnalogMeterPlateSceneObject.h; sourceTree = "<group>"; };
+		CEF1AEE41679E654004C8276 /* GLAnalogMeterPlateSceneObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLAnalogMeterPlateSceneObject.m; sourceTree = "<group>"; };
+		CEF1AEE51679E654004C8276 /* GLAnalogMeterVisualizerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLAnalogMeterVisualizerScene.h; sourceTree = "<group>"; };
+		CEF1AEE61679E654004C8276 /* GLAnalogMeterVisualizerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLAnalogMeterVisualizerScene.m; sourceTree = "<group>"; };
+		CEF1AEE71679E654004C8276 /* GLStereoAnalogMeterVisualizerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLStereoAnalogMeterVisualizerScene.h; sourceTree = "<group>"; };
+		CEF1AEE81679E654004C8276 /* GLStereoAnalogMeterVisualizerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLStereoAnalogMeterVisualizerScene.m; sourceTree = "<group>"; };
+		CEF1AEE91679E654004C8276 /* NeedleMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeedleMesh.h; sourceTree = "<group>"; };
+		CEF1AEEA1679E654004C8276 /* PlateMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlateMesh.h; sourceTree = "<group>"; };
+		CEF1AEEC1679E654004C8276 /* DefaultMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultMesh.h; sourceTree = "<group>"; };
+		CEF1AEED1679E654004C8276 /* GLDefaultVisualizerMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDefaultVisualizerMesh.h; sourceTree = "<group>"; };
+		CEF1AEEE1679E654004C8276 /* GLDefaultVisualizerMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDefaultVisualizerMesh.m; sourceTree = "<group>"; };
+		CEF1AEEF1679E654004C8276 /* GLDefaultVisualizerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDefaultVisualizerScene.h; sourceTree = "<group>"; };
+		CEF1AEF01679E654004C8276 /* GLDefaultVisualizerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDefaultVisualizerScene.m; sourceTree = "<group>"; };
+		CEF1AEF11679E654004C8276 /* GLDefaultVisualizerSceneObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDefaultVisualizerSceneObject.h; sourceTree = "<group>"; };
+		CEF1AEF21679E654004C8276 /* GLDefaultVisualizerSceneObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDefaultVisualizerSceneObject.m; sourceTree = "<group>"; };
+		CEF1AEF31679E654004C8276 /* GLVisualizationStyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVisualizationStyleManager.h; sourceTree = "<group>"; };
+		CEF1AEF41679E654004C8276 /* GLVisualizationStyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVisualizationStyleManager.m; sourceTree = "<group>"; };
+		CEF1AEF51679E654004C8276 /* GLVisualizationStylesRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVisualizationStylesRegistry.h; sourceTree = "<group>"; };
+		CEF1AF0B167A092B004C8276 /* GLMaterialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLMaterialController.h; path = ../GLMaterialController.h; sourceTree = "<group>"; };
+		CEF1AF0C167A092B004C8276 /* GLMaterialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLMaterialController.m; path = ../GLMaterialController.m; sourceTree = "<group>"; };
+		CEF1AF12167A34D8004C8276 /* GLAnalogMeterAtlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GLAnalogMeterAtlas.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE072EB0166CD2360085A540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE072F7A16762C170085A540 /* AudioToolbox.framework in Frameworks */,
+				CE072EE9166CD4DD0085A540 /* OpenGLES.framework in Frameworks */,
+				CE072EE7166CD4AF0085A540 /* QuartzCore.framework in Frameworks */,
+				CE072EB8166CD2360085A540 /* UIKit.framework in Frameworks */,
+				CE072EBA166CD2360085A540 /* Foundation.framework in Frameworks */,
+				CE072EBC166CD2360085A540 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE072EA8166CD2360085A540 = {
+			isa = PBXGroup;
+			children = (
+				CE072EBD166CD2360085A540 /* SoundVisualizer */,
+				CE072EB6166CD2360085A540 /* Frameworks */,
+				CE072EB4166CD2360085A540 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE072EB4166CD2360085A540 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE072EB3166CD2360085A540 /* SoundVisualizer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE072EB6166CD2360085A540 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE072F7916762C160085A540 /* AudioToolbox.framework */,
+				CE072EE8166CD4DD0085A540 /* OpenGLES.framework */,
+				CE072EE6166CD4AF0085A540 /* QuartzCore.framework */,
+				CE072EB7166CD2360085A540 /* UIKit.framework */,
+				CE072EB9166CD2360085A540 /* Foundation.framework */,
+				CE072EBB166CD2360085A540 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE072EBD166CD2360085A540 /* SoundVisualizer */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1AECC1679E654004C8276 /* GLDataVisualizationView */,
+				CE072EC6166CD2360085A540 /* AppDelegate.h */,
+				CE072EC7166CD2360085A540 /* AppDelegate.m */,
+				CE072ECF166CD2360085A540 /* ViewController.h */,
+				CE072ED0166CD2360085A540 /* ViewController.m */,
+				CE072ED2166CD2360085A540 /* ViewController.xib */,
+				CE072EBE166CD2360085A540 /* Supporting Files */,
+			);
+			path = SoundVisualizer;
+			sourceTree = "<group>";
+		};
+		CE072EBE166CD2360085A540 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE072EBF166CD2360085A540 /* SoundVisualizer-Info.plist */,
+				CE072EC0166CD2360085A540 /* InfoPlist.strings */,
+				CE072EC3166CD2360085A540 /* main.m */,
+				CE072EC5166CD2360085A540 /* SoundVisualizer-Prefix.pch */,
+				CE072EC9166CD2360085A540 /* Default.png */,
+				CE072ECB166CD2360085A540 /* Default@2x.png */,
+				CE072ECD166CD2360085A540 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEF1AECC1679E654004C8276 /* GLDataVisualizationView */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1AECD1679E654004C8276 /* Additional */,
+				CEF1AED01679E654004C8276 /* GLDataVisualizationView.h */,
+				CEF1AED11679E654004C8276 /* GLDataVisualizationView.m */,
+				CEF1AED21679E654004C8276 /* GLVisualizerSceneController.h */,
+				CEF1AED31679E654004C8276 /* GLVisualizerSceneController.m */,
+				CEF1AED41679E654004C8276 /* VisualizatonScenes */,
+			);
+			name = GLDataVisualizationView;
+			path = ../../GLDataVisualizationView;
+			sourceTree = "<group>";
+		};
+		CEF1AECD1679E654004C8276 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1AECE1679E654004C8276 /* GLAdditions.h */,
+				CEF1AECF1679E654004C8276 /* GLAdditions.m */,
+			);
+			path = Additional;
+			sourceTree = "<group>";
+		};
+		CEF1AED41679E654004C8276 /* VisualizatonScenes */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1AED51679E654004C8276 /* BaseScene */,
+				CEF1AEDC1679E654004C8276 /* GLAnalogMeterVisualizerScene */,
+				CEF1AEEB1679E654004C8276 /* GLDefaultVisualizerScene */,
+				CEF1AEF31679E654004C8276 /* GLVisualizationStyleManager.h */,
+				CEF1AEF41679E654004C8276 /* GLVisualizationStyleManager.m */,
+				CEF1AEF51679E654004C8276 /* GLVisualizationStylesRegistry.h */,
+				CEF1AF0B167A092B004C8276 /* GLMaterialController.h */,
+				CEF1AF0C167A092B004C8276 /* GLMaterialController.m */,
+			);
+			path = VisualizatonScenes;
+			sourceTree = "<group>";
+		};
+		CEF1AED51679E654004C8276 /* BaseScene */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1AED61679E654004C8276 /* GLVisualizerMesh.h */,
+				CEF1AED71679E654004C8276 /* GLVisualizerMesh.m */,
+				CEF1AED81679E654004C8276 /* GLVisualizerScene.h */,
+				CEF1AED91679E654004C8276 /* GLVisualizerScene.m */,
+				CEF1AEDA1679E654004C8276 /* GLVisualizerSceneObject.h */,
+				CEF1AEDB1679E654004C8276 /* GLVisualizerSceneObject.m */,
+			);
+			path = BaseScene;
+			sourceTree = "<group>";
+		};
+		CEF1AEDC1679E654004C8276 /* GLAnalogMeterVisualizerScene */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1AF12167A34D8004C8276 /* GLAnalogMeterAtlas.png */,
+				CEF1AEDD1679E654004C8276 /* GLAnalogMeterNeedleMesh.h */,
+				CEF1AEDE1679E654004C8276 /* GLAnalogMeterNeedleMesh.m */,
+				CEF1AEDF1679E654004C8276 /* GLAnalogMeterNeedleSceneObject.h */,
+				CEF1AEE01679E654004C8276 /* GLAnalogMeterNeedleSceneObject.m */,
+				CEF1AEE11679E654004C8276 /* GLAnalogMeterPlateMesh.h */,
+				CEF1AEE21679E654004C8276 /* GLAnalogMeterPlateMesh.m */,
+				CEF1AEE31679E654004C8276 /* GLAnalogMeterPlateSceneObject.h */,
+				CEF1AEE41679E654004C8276 /* GLAnalogMeterPlateSceneObject.m */,
+				CEF1AEE51679E654004C8276 /* GLAnalogMeterVisualizerScene.h */,
+				CEF1AEE61679E654004C8276 /* GLAnalogMeterVisualizerScene.m */,
+				CEF1AEE71679E654004C8276 /* GLStereoAnalogMeterVisualizerScene.h */,
+				CEF1AEE81679E654004C8276 /* GLStereoAnalogMeterVisualizerScene.m */,
+				CEF1AEE91679E654004C8276 /* NeedleMesh.h */,
+				CEF1AEEA1679E654004C8276 /* PlateMesh.h */,
+			);
+			path = GLAnalogMeterVisualizerScene;
+			sourceTree = "<group>";
+		};
+		CEF1AEEB1679E654004C8276 /* GLDefaultVisualizerScene */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1AEEC1679E654004C8276 /* DefaultMesh.h */,
+				CEF1AEED1679E654004C8276 /* GLDefaultVisualizerMesh.h */,
+				CEF1AEEE1679E654004C8276 /* GLDefaultVisualizerMesh.m */,
+				CEF1AEEF1679E654004C8276 /* GLDefaultVisualizerScene.h */,
+				CEF1AEF01679E654004C8276 /* GLDefaultVisualizerScene.m */,
+				CEF1AEF11679E654004C8276 /* GLDefaultVisualizerSceneObject.h */,
+				CEF1AEF21679E654004C8276 /* GLDefaultVisualizerSceneObject.m */,
+			);
+			path = GLDefaultVisualizerScene;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE072EB2166CD2360085A540 /* SoundVisualizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE072ED7166CD2360085A540 /* Build configuration list for PBXNativeTarget "SoundVisualizer" */;
+			buildPhases = (
+				CE072EAF166CD2360085A540 /* Sources */,
+				CE072EB0166CD2360085A540 /* Frameworks */,
+				CE072EB1166CD2360085A540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundVisualizer;
+			productName = SoundVisualizer;
+			productReference = CE072EB3166CD2360085A540 /* SoundVisualizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE072EAA166CD2360085A540 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Mike Dutka";
+			};
+			buildConfigurationList = CE072EAD166CD2360085A540 /* Build configuration list for PBXProject "SoundVisualizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE072EA8166CD2360085A540;
+			productRefGroup = CE072EB4166CD2360085A540 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE072EB2166CD2360085A540 /* SoundVisualizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE072EB1166CD2360085A540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE072EC2166CD2360085A540 /* InfoPlist.strings in Resources */,
+				CE072ECA166CD2360085A540 /* Default.png in Resources */,
+				CE072ECC166CD2360085A540 /* Default@2x.png in Resources */,
+				CE072ECE166CD2360085A540 /* Default-568h@2x.png in Resources */,
+				CE072ED4166CD2360085A540 /* ViewController.xib in Resources */,
+				CEF1AF13167A34D8004C8276 /* GLAnalogMeterAtlas.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE072EAF166CD2360085A540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE072EC4166CD2360085A540 /* main.m in Sources */,
+				CE072EC8166CD2360085A540 /* AppDelegate.m in Sources */,
+				CE072ED1166CD2360085A540 /* ViewController.m in Sources */,
+				CEF1AEF61679E654004C8276 /* GLAdditions.m in Sources */,
+				CEF1AEF71679E654004C8276 /* GLDataVisualizationView.m in Sources */,
+				CEF1AEF81679E654004C8276 /* GLVisualizerSceneController.m in Sources */,
+				CEF1AEF91679E654004C8276 /* GLVisualizerMesh.m in Sources */,
+				CEF1AEFA1679E654004C8276 /* GLVisualizerScene.m in Sources */,
+				CEF1AEFB1679E654004C8276 /* GLVisualizerSceneObject.m in Sources */,
+				CEF1AEFC1679E654004C8276 /* GLAnalogMeterNeedleMesh.m in Sources */,
+				CEF1AEFD1679E654004C8276 /* GLAnalogMeterNeedleSceneObject.m in Sources */,
+				CEF1AEFE1679E654004C8276 /* GLAnalogMeterPlateMesh.m in Sources */,
+				CEF1AEFF1679E654004C8276 /* GLAnalogMeterPlateSceneObject.m in Sources */,
+				CEF1AF001679E654004C8276 /* GLAnalogMeterVisualizerScene.m in Sources */,
+				CEF1AF011679E654004C8276 /* GLStereoAnalogMeterVisualizerScene.m in Sources */,
+				CEF1AF021679E654004C8276 /* GLDefaultVisualizerMesh.m in Sources */,
+				CEF1AF031679E654004C8276 /* GLDefaultVisualizerScene.m in Sources */,
+				CEF1AF041679E654004C8276 /* GLDefaultVisualizerSceneObject.m in Sources */,
+				CEF1AF051679E654004C8276 /* GLVisualizationStyleManager.m in Sources */,
+				CEF1AF0D167A092B004C8276 /* GLMaterialController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE072EC0166CD2360085A540 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE072EC1166CD2360085A540 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE072ED2166CD2360085A540 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE072ED3166CD2360085A540 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE072ED5166CD2360085A540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+					armv7s,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s armv6";
+			};
+			name = Debug;
+		};
+		CE072ED6166CD2360085A540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+					armv7s,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s armv6";
+			};
+			name = Release;
+		};
+		CE072ED8166CD2360085A540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundVisualizer/SoundVisualizer-Prefix.pch";
+				INFOPLIST_FILE = "SoundVisualizer/SoundVisualizer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE072ED9166CD2360085A540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundVisualizer/SoundVisualizer-Prefix.pch";
+				INFOPLIST_FILE = "SoundVisualizer/SoundVisualizer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE072EAD166CD2360085A540 /* Build configuration list for PBXProject "SoundVisualizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE072ED5166CD2360085A540 /* Debug */,
+				CE072ED6166CD2360085A540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE072ED7166CD2360085A540 /* Build configuration list for PBXNativeTarget "SoundVisualizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE072ED8166CD2360085A540 /* Debug */,
+				CE072ED9166CD2360085A540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE072EAA166CD2360085A540 /* Project object */;
+}
