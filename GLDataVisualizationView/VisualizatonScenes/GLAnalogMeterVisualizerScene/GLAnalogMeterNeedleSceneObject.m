@@ -9,7 +9,7 @@
 #import "GLAnalogMeterNeedleSceneObject.h"
 #import "GLAnalogMeterNeedleMesh.h"
 
-#define INITIAL_Y_ROTATION 50.
+#define INITIAL_Y_ROTATION 52.
 
 @implementation GLAnalogMeterNeedleSceneObject
 
