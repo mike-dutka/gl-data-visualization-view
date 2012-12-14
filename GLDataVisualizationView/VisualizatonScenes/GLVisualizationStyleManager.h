@@ -2,7 +2,7 @@
 //  GLSoundVisualizationStyleManager.h
 //  SoundVisualizer
 //
-//  Created by mac-admin on 10/12/2012.
+//  Created by mike-dutka on 10/12/2012.
 //  Copyright (c) 2012 Mike Dutka. All rights reserved.
 //
 
