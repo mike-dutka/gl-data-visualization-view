@@ -34,8 +34,8 @@
     rp.position = GLPointAdd(rp.position, 0.1, 0., 0.);
     lp.position = GLPointAdd(lp.position, -1.6, 0., 0.);
     
-    ln.position = GLPointAdd(ln.position, -0.8, -0.4, 0.);
-    rn.position = GLPointAdd(rn.position, 0.8, -0.4, 0.);
+    ln.position = GLPointAdd(ln.position, -0.85, -0.4, 0.);
+    rn.position = GLPointAdd(rn.position, 0.85, -0.4, 0.);
     
     plates = [[NSArray alloc] initWithObjects:lp, rp, nil];
     needles = [[NSArray alloc] initWithObjects:ln, rn, nil];
@@ -45,7 +45,12 @@
 
 -(void)upateSceneObjects{
     NSArray* values = self.dataValues;
-    if([values count] == 0) return;
+    if([values count] == 0){
+        float v = 0.;
+        NSValue* val = [NSValue value:&v withObjCType:@encode(float)];
+        self.dataValues = [NSArray arrayWithObjects: val, val, nil];
+        values = self.dataValues;
+    }
     
     if([values count] != 2){
         values = [NSArray arrayWithObjects:[values objectAtIndex:0], [values objectAtIndex:0], nil];

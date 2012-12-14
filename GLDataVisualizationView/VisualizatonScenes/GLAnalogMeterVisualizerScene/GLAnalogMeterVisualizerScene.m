@@ -27,7 +27,12 @@
 
 -(void)upateSceneObjects{
     NSArray* values = self.dataValues;
-    if([values count] == 0) return;
+    if([values count] == 0){
+        float v = 0.;
+        NSValue* val = [NSValue value:&v withObjCType:@encode(float)];
+        self.dataValues = [NSArray arrayWithObjects: val, nil];
+        values = self.dataValues;
+    }
     
     [[self.sceneObjects objectAtIndex:1] updateWithDataValue:[values objectAtIndex:0]];
 }
