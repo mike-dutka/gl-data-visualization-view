@@ -41,8 +41,8 @@ Note that setting the view non-opaque will only work if the EAGL surface has an 
 }
 
 /**
-* array with values wrapped in NSValue object depend on visualization style selected.
-* example:
+* array with objects depend on visualization style selected.
+* audio metering visualization example:
 * NSMutableArray* ma = [NSMutableArray arrayWithCapacity:2];
 * AudioQueueLevelMeterState s;
 * NSValue* v = [NSValue value:&s withObjCType:@encode(AudioQueueLevelMeterState)];

@@ -240,6 +240,7 @@
 -(NSArray *)dataValues{
     @synchronized(sceneController){
         if(sceneController.scene.dataValues == nil){
+            //deafult dataValues initialization
             NSMutableArray* ma = [NSMutableArray arrayWithCapacity:2];
             float val = 0.0;
             NSValue* v = [NSValue value:&val withObjCType:@encode(float)];

@@ -39,7 +39,7 @@
 	mesh = [[[self mesh] alloc] init];
 }
 
-- (void)updateWithDataValue:(NSValue*)value{
+- (void)updateWithDataValue:(NSObject*)value{
 }
 
 // called once every frame

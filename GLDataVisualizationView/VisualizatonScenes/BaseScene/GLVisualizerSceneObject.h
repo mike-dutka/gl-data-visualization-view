@@ -21,6 +21,6 @@
 
 - (void)awake;
 - (void)render;
-- (void)updateWithDataValue:(NSValue*)value;
+- (void)updateWithDataValue:(NSObject*)value;
 - (Class)mesh;
 @end
