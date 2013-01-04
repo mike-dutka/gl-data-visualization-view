@@ -21,8 +21,7 @@
     [(NSValue*)data getValue:&val];
     NSAssert((val >= 0.0 && val <= 1.0), @"Error: data value should be float value in range of 0.0 - 1.0. Current is: %.20f", val);
     
-    float angle = INITIAL_Y_ROTATION * (1 - 2 * val);
-    if(angle < 0)angle += 360.;
+    float angle =  -val*2*INITIAL_Y_ROTATION;
     
     self.transform.rotation = GLRotationMake(0., 0., angle);
     
@@ -33,6 +32,7 @@
     GLTransformation* tr = [[[GLTransformation alloc] init] autorelease];
     tr.position = GLPointMake(0.75f, 0.01f, 0.0f);
     tr.scale = GLScaleMake(0.5f, 0.71f, 1.0f);
+    tr.rotation = GLRotationMake(0., 0., INITIAL_Y_ROTATION);
     return tr;
 }
 @end
