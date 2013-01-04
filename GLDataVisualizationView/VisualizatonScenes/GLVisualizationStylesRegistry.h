@@ -12,5 +12,6 @@
 #define kGLVisualizationStyleDefault @"GLDefaultVisualizerScene"
 #define kGLVisualizationStyleAnalogMeter @"GLAnalogMeterVisualizerScene"
 #define kGLVisualizationStyleStereoAnalogMeter @"GLStereoAnalogMeterVisualizerScene"
+#define kGLVisualizationStyleVUMeter @"GLVUMeterVisualizerScene"
 
 #endif

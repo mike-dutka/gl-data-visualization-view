@@ -33,7 +33,7 @@
 
 -(void)upateSceneObjects{
     int c = [self.sceneObjects count];
-    if(c > 0 && c == [self.dataValues count]){
+    if(c > 0 && c <= [self.dataValues count]){
         for (int i=0; i<c; i++) {
             [self applyValue:i];
         }

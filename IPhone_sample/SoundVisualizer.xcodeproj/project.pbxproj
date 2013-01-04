@@ -39,6 +39,19 @@
 		CEF1AF051679E654004C8276 /* GLVisualizationStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AEF41679E654004C8276 /* GLVisualizationStyleManager.m */; };
 		CEF1AF0D167A092B004C8276 /* GLMaterialController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AF0C167A092B004C8276 /* GLMaterialController.m */; };
 		CEF1AF13167A34D8004C8276 /* GLAnalogMeterAtlas.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF1AF12167A34D8004C8276 /* GLAnalogMeterAtlas.png */; };
+		CEF1AFA316945F56004C8276 /* GLVUMeterVisualizerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFA216945F56004C8276 /* GLVUMeterVisualizerScene.m */; };
+		CEF1AFA616945F91004C8276 /* GLVUMeterVisualizerSceneObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFA516945F91004C8276 /* GLVUMeterVisualizerSceneObject.m */; };
+		CEF1AFAC169463B4004C8276 /* GLVisualizerComplexSceneObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFAB169463B3004C8276 /* GLVisualizerComplexSceneObject.m */; };
+		CEF1AFBC16947CDA004C8276 /* GLVisualizerComplexSceneObjectPart.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFBB16947CD7004C8276 /* GLVisualizerComplexSceneObjectPart.m */; };
+		CEF1AFBF16947EF9004C8276 /* GLTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFBE16947EF6004C8276 /* GLTransformation.m */; };
+		CEF1AFC21695C192004C8276 /* GLVUMeterPlateSceneObjectPart.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFC11695C190004C8276 /* GLVUMeterPlateSceneObjectPart.m */; };
+		CEF1AFC51695C1E4004C8276 /* GLVUMeterPlateMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFC41695C1E2004C8276 /* GLVUMeterPlateMesh.m */; };
+		CEF1AFC91695C437004C8276 /* GLVUMeterNeedleMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFC81695C434004C8276 /* GLVUMeterNeedleMesh.m */; };
+		CEF1AFCD1695C4D5004C8276 /* GLVUMeterNeedleSceneObjectPart.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFCC1695C4D0004C8276 /* GLVUMeterNeedleSceneObjectPart.m */; };
+		CEF1AFD31695C55C004C8276 /* GLVUMeterCoverMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFD21695C557004C8276 /* GLVUMeterCoverMesh.m */; };
+		CEF1AFD71695C6B9004C8276 /* GLVUMeterPeakIndicatorSceneObjectPart.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFD61695C6B1004C8276 /* GLVUMeterPeakIndicatorSceneObjectPart.m */; };
+		CEF1AFDA1695C6EA004C8276 /* GLVUMeterPeakIndicatorMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFD91695C6E3004C8276 /* GLVUMeterPeakIndicatorMesh.m */; };
+		CEF1AFDD1695C9F7004C8276 /* GLVUMeterAtlas.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF1AFDC1695C9F3004C8276 /* GLVUMeterAtlas.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +113,37 @@
 		CEF1AF0B167A092B004C8276 /* GLMaterialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLMaterialController.h; path = ../GLMaterialController.h; sourceTree = "<group>"; };
 		CEF1AF0C167A092B004C8276 /* GLMaterialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLMaterialController.m; path = ../GLMaterialController.m; sourceTree = "<group>"; };
 		CEF1AF12167A34D8004C8276 /* GLAnalogMeterAtlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GLAnalogMeterAtlas.png; sourceTree = "<group>"; };
+		CEF1AFA116945F56004C8276 /* GLVUMeterVisualizerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVUMeterVisualizerScene.h; sourceTree = "<group>"; };
+		CEF1AFA216945F56004C8276 /* GLVUMeterVisualizerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVUMeterVisualizerScene.m; sourceTree = "<group>"; };
+		CEF1AFA416945F91004C8276 /* GLVUMeterVisualizerSceneObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVUMeterVisualizerSceneObject.h; sourceTree = "<group>"; };
+		CEF1AFA516945F91004C8276 /* GLVUMeterVisualizerSceneObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVUMeterVisualizerSceneObject.m; sourceTree = "<group>"; };
+		CEF1AFAA169463B1004C8276 /* GLVisualizerComplexSceneObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVisualizerComplexSceneObject.h; sourceTree = "<group>"; };
+		CEF1AFAB169463B3004C8276 /* GLVisualizerComplexSceneObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVisualizerComplexSceneObject.m; sourceTree = "<group>"; };
+		CEF1AFBA16947CD4004C8276 /* GLVisualizerComplexSceneObjectPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVisualizerComplexSceneObjectPart.h; sourceTree = "<group>"; };
+		CEF1AFBB16947CD7004C8276 /* GLVisualizerComplexSceneObjectPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVisualizerComplexSceneObjectPart.m; sourceTree = "<group>"; };
+		CEF1AFBD16947EF2004C8276 /* GLTransformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTransformation.h; sourceTree = "<group>"; };
+		CEF1AFBE16947EF6004C8276 /* GLTransformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTransformation.m; sourceTree = "<group>"; };
+		CEF1AFC01695C18F004C8276 /* GLVUMeterPlateSceneObjectPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVUMeterPlateSceneObjectPart.h; sourceTree = "<group>"; };
+		CEF1AFC11695C190004C8276 /* GLVUMeterPlateSceneObjectPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVUMeterPlateSceneObjectPart.m; sourceTree = "<group>"; };
+		CEF1AFC31695C1E0004C8276 /* GLVUMeterPlateMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVUMeterPlateMesh.h; sourceTree = "<group>"; };
+		CEF1AFC41695C1E2004C8276 /* GLVUMeterPlateMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVUMeterPlateMesh.m; sourceTree = "<group>"; };
+		CEF1AFC61695C205004C8276 /* VUPlateMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VUPlateMesh.h; sourceTree = "<group>"; };
+		CEF1AFC71695C431004C8276 /* GLVUMeterNeedleMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVUMeterNeedleMesh.h; sourceTree = "<group>"; };
+		CEF1AFC81695C434004C8276 /* GLVUMeterNeedleMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVUMeterNeedleMesh.m; sourceTree = "<group>"; };
+		CEF1AFCA1695C450004C8276 /* VUNeedleMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VUNeedleMesh.h; sourceTree = "<group>"; };
+		CEF1AFCB1695C4CC004C8276 /* GLVUMeterNeedleSceneObjectPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVUMeterNeedleSceneObjectPart.h; sourceTree = "<group>"; };
+		CEF1AFCC1695C4D0004C8276 /* GLVUMeterNeedleSceneObjectPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVUMeterNeedleSceneObjectPart.m; sourceTree = "<group>"; };
+		CEF1AFCE1695C504004C8276 /* GLVUMeterCoverSceneObjectPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVUMeterCoverSceneObjectPart.h; sourceTree = "<group>"; };
+		CEF1AFCF1695C509004C8276 /* GLVUMeterCoverSceneObjectPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVUMeterCoverSceneObjectPart.m; sourceTree = "<group>"; };
+		CEF1AFD11695C552004C8276 /* GLVUMeterCoverMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVUMeterCoverMesh.h; sourceTree = "<group>"; };
+		CEF1AFD21695C557004C8276 /* GLVUMeterCoverMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVUMeterCoverMesh.m; sourceTree = "<group>"; };
+		CEF1AFD41695C58D004C8276 /* VUCoverMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VUCoverMesh.h; sourceTree = "<group>"; };
+		CEF1AFD51695C6AA004C8276 /* GLVUMeterPeakIndicatorSceneObjectPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVUMeterPeakIndicatorSceneObjectPart.h; sourceTree = "<group>"; };
+		CEF1AFD61695C6B1004C8276 /* GLVUMeterPeakIndicatorSceneObjectPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVUMeterPeakIndicatorSceneObjectPart.m; sourceTree = "<group>"; };
+		CEF1AFD81695C6DC004C8276 /* GLVUMeterPeakIndicatorMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVUMeterPeakIndicatorMesh.h; sourceTree = "<group>"; };
+		CEF1AFD91695C6E3004C8276 /* GLVUMeterPeakIndicatorMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVUMeterPeakIndicatorMesh.m; sourceTree = "<group>"; };
+		CEF1AFDB1695C70E004C8276 /* VUPeakIndicatorMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VUPeakIndicatorMesh.h; sourceTree = "<group>"; };
+		CEF1AFDC1695C9F3004C8276 /* GLVUMeterAtlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GLVUMeterAtlas.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +247,7 @@
 		CEF1AED41679E654004C8276 /* VisualizatonScenes */ = {
 			isa = PBXGroup;
 			children = (
+				CEF1AF9F16945F04004C8276 /* GLVUMeterVisualizerScene */,
 				CEF1AED51679E654004C8276 /* BaseScene */,
 				CEF1AEDC1679E654004C8276 /* GLAnalogMeterVisualizerScene */,
 				CEF1AEEB1679E654004C8276 /* GLDefaultVisualizerScene */,
@@ -224,6 +269,12 @@
 				CEF1AED91679E654004C8276 /* GLVisualizerScene.m */,
 				CEF1AEDA1679E654004C8276 /* GLVisualizerSceneObject.h */,
 				CEF1AEDB1679E654004C8276 /* GLVisualizerSceneObject.m */,
+				CEF1AFAA169463B1004C8276 /* GLVisualizerComplexSceneObject.h */,
+				CEF1AFAB169463B3004C8276 /* GLVisualizerComplexSceneObject.m */,
+				CEF1AFBA16947CD4004C8276 /* GLVisualizerComplexSceneObjectPart.h */,
+				CEF1AFBB16947CD7004C8276 /* GLVisualizerComplexSceneObjectPart.m */,
+				CEF1AFBD16947EF2004C8276 /* GLTransformation.h */,
+				CEF1AFBE16947EF6004C8276 /* GLTransformation.m */,
 			);
 			path = BaseScene;
 			sourceTree = "<group>";
@@ -262,6 +313,38 @@
 				CEF1AEF21679E654004C8276 /* GLDefaultVisualizerSceneObject.m */,
 			);
 			path = GLDefaultVisualizerScene;
+			sourceTree = "<group>";
+		};
+		CEF1AF9F16945F04004C8276 /* GLVUMeterVisualizerScene */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1AFDC1695C9F3004C8276 /* GLVUMeterAtlas.png */,
+				CEF1AFA116945F56004C8276 /* GLVUMeterVisualizerScene.h */,
+				CEF1AFA216945F56004C8276 /* GLVUMeterVisualizerScene.m */,
+				CEF1AFA416945F91004C8276 /* GLVUMeterVisualizerSceneObject.h */,
+				CEF1AFA516945F91004C8276 /* GLVUMeterVisualizerSceneObject.m */,
+				CEF1AFC01695C18F004C8276 /* GLVUMeterPlateSceneObjectPart.h */,
+				CEF1AFC11695C190004C8276 /* GLVUMeterPlateSceneObjectPart.m */,
+				CEF1AFC31695C1E0004C8276 /* GLVUMeterPlateMesh.h */,
+				CEF1AFC41695C1E2004C8276 /* GLVUMeterPlateMesh.m */,
+				CEF1AFC61695C205004C8276 /* VUPlateMesh.h */,
+				CEF1AFCB1695C4CC004C8276 /* GLVUMeterNeedleSceneObjectPart.h */,
+				CEF1AFCC1695C4D0004C8276 /* GLVUMeterNeedleSceneObjectPart.m */,
+				CEF1AFC71695C431004C8276 /* GLVUMeterNeedleMesh.h */,
+				CEF1AFC81695C434004C8276 /* GLVUMeterNeedleMesh.m */,
+				CEF1AFCA1695C450004C8276 /* VUNeedleMesh.h */,
+				CEF1AFD51695C6AA004C8276 /* GLVUMeterPeakIndicatorSceneObjectPart.h */,
+				CEF1AFD61695C6B1004C8276 /* GLVUMeterPeakIndicatorSceneObjectPart.m */,
+				CEF1AFD81695C6DC004C8276 /* GLVUMeterPeakIndicatorMesh.h */,
+				CEF1AFD91695C6E3004C8276 /* GLVUMeterPeakIndicatorMesh.m */,
+				CEF1AFDB1695C70E004C8276 /* VUPeakIndicatorMesh.h */,
+				CEF1AFCE1695C504004C8276 /* GLVUMeterCoverSceneObjectPart.h */,
+				CEF1AFCF1695C509004C8276 /* GLVUMeterCoverSceneObjectPart.m */,
+				CEF1AFD11695C552004C8276 /* GLVUMeterCoverMesh.h */,
+				CEF1AFD21695C557004C8276 /* GLVUMeterCoverMesh.m */,
+				CEF1AFD41695C58D004C8276 /* VUCoverMesh.h */,
+			);
+			path = GLVUMeterVisualizerScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +404,7 @@
 				CE072ECE166CD2360085A540 /* Default-568h@2x.png in Resources */,
 				CE072ED4166CD2360085A540 /* ViewController.xib in Resources */,
 				CEF1AF13167A34D8004C8276 /* GLAnalogMeterAtlas.png in Resources */,
+				CEF1AFDD1695C9F7004C8276 /* GLVUMeterAtlas.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +435,18 @@
 				CEF1AF041679E654004C8276 /* GLDefaultVisualizerSceneObject.m in Sources */,
 				CEF1AF051679E654004C8276 /* GLVisualizationStyleManager.m in Sources */,
 				CEF1AF0D167A092B004C8276 /* GLMaterialController.m in Sources */,
+				CEF1AFA316945F56004C8276 /* GLVUMeterVisualizerScene.m in Sources */,
+				CEF1AFA616945F91004C8276 /* GLVUMeterVisualizerSceneObject.m in Sources */,
+				CEF1AFAC169463B4004C8276 /* GLVisualizerComplexSceneObject.m in Sources */,
+				CEF1AFBC16947CDA004C8276 /* GLVisualizerComplexSceneObjectPart.m in Sources */,
+				CEF1AFBF16947EF9004C8276 /* GLTransformation.m in Sources */,
+				CEF1AFC21695C192004C8276 /* GLVUMeterPlateSceneObjectPart.m in Sources */,
+				CEF1AFC51695C1E4004C8276 /* GLVUMeterPlateMesh.m in Sources */,
+				CEF1AFC91695C437004C8276 /* GLVUMeterNeedleMesh.m in Sources */,
+				CEF1AFCD1695C4D5004C8276 /* GLVUMeterNeedleSceneObjectPart.m in Sources */,
+				CEF1AFD31695C55C004C8276 /* GLVUMeterCoverMesh.m in Sources */,
+				CEF1AFD71695C6B9004C8276 /* GLVUMeterPeakIndicatorSceneObjectPart.m in Sources */,
+				CEF1AFDA1695C6EA004C8276 /* GLVUMeterPeakIndicatorMesh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -48,6 +48,7 @@ Note that setting the view non-opaque will only work if the EAGL surface has an 
 * NSValue* v = [NSValue value:&s withObjCType:@encode(AudioQueueLevelMeterState)];
 * [ma addObject:v];
 * [ma addObject:v];
+* visualizationView.dataValues = ma;
 */
 @property(nonatomic, strong) NSArray* dataValues;
 @property(atomic, strong) NSString* visualizationStyle;

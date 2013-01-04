@@ -11,6 +11,8 @@
 @interface ViewController (){  
     NSTimer* timer;
     Boolean directionReverse;
+    NSArray* visualizationStyles;
+    int visualizationIndex;
 }
 -(void)updatelevels;
 @end
@@ -20,7 +22,9 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    glView.visualizationStyle = kGLVisualizationStyleAnalogMeter;
+    visualizationStyles = [[NSArray alloc] initWithObjects:kGLVisualizationStyleVUMeter, kGLVisualizationStyleAnalogMeter, kGLVisualizationStyleDefault, nil];
+    visualizationIndex = 0;
+    glView.visualizationStyle = [visualizationStyles objectAtIndex:visualizationIndex];
     glView.visualizationContentMode = GLDataVisualizationViewContentModeScaleToFit;
 }
 
@@ -31,25 +35,41 @@
 }
 
 -(void)updatelevels{
-    static float val = 0;
-    val += directionReverse? -0.05f: 0.05f;
-    if (val >= 1.0f || val <= 0.0f) {
-        if(val > 1.) val = 1.0f;
-        if(val <= 0.) val = 0.0f;
-        
-        directionReverse = !directionReverse;
+    switch (visualizationIndex) {
+        case 0:{
+            static float val = 0;
+            val += directionReverse? -0.05f: 0.05f;
+            if (val >= 1.0f || val <= 0.0f) {
+                if(val > 1.) val = 1.0f;
+                if(val <= 0.) val = 0.0f;
+                
+                directionReverse = !directionReverse;
+            }
+            
+            NSValue* v = [NSValue value:&val withObjCType:@encode(float)];
+            glView.dataValues = [NSArray arrayWithObjects:v, nil];
+        }
+            break;
+        default:{
+            static float val = 0;
+            val += directionReverse? -0.05f: 0.05f;
+            if (val >= 1.0f || val <= 0.0f) {
+                if(val > 1.) val = 1.0f;
+                if(val <= 0.) val = 0.0f;
+                
+                directionReverse = !directionReverse;
+            }
+            
+            NSValue* v = [NSValue value:&val withObjCType:@encode(float)];
+            glView.dataValues = [NSArray arrayWithObjects:v, v, nil];
+        }
+            break;
     }
-    
-    NSValue* v = [NSValue value:&val withObjCType:@encode(float)];
-    glView.dataValues = [NSArray arrayWithObjects:v, v, nil];
 }
 
 -(IBAction)changeStyleDidClicked:(UIButton*)btn{
-    if(glView.visualizationStyle == kGLVisualizationStyleAnalogMeter){
-        glView.visualizationStyle = kGLVisualizationStyleDefault;
-    }else{
-        glView.visualizationStyle = kGLVisualizationStyleAnalogMeter;
-    }
+    visualizationIndex = (visualizationIndex + 1) % [visualizationStyles count];
+    glView.visualizationStyle = [visualizationStyles objectAtIndex:visualizationIndex];
 }
 
 - (void)didReceiveMemoryWarning
