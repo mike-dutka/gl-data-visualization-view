@@ -22,7 +22,7 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    visualizationStyles = [[NSArray alloc] initWithObjects:kGLVisualizationStyleVUMeter, kGLVisualizationStyleAnalogMeter, kGLVisualizationStyleDefault, nil];
+    visualizationStyles = [[NSArray alloc] initWithObjects:kGLVisualizationStyleStereoVUMeter, kGLVisualizationStyleVUMeter, kGLVisualizationStyleAnalogMeter, kGLVisualizationStyleDefault, nil];
     visualizationIndex = 0;
     glView.visualizationStyle = [visualizationStyles objectAtIndex:visualizationIndex];
     glView.visualizationContentMode = GLDataVisualizationViewContentModeScaleToFit;
@@ -36,7 +36,7 @@
 
 -(void)updatelevels{
     switch (visualizationIndex) {
-        case 0:{
+        case 1:{
             static float val = 0;
             val += directionReverse? -0.05f: 0.05f;
             if (val >= 1.0f || val <= 0.0f) {

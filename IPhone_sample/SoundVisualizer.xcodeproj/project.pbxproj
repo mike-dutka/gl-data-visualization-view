@@ -52,6 +52,7 @@
 		CEF1AFD71695C6B9004C8276 /* GLVUMeterPeakIndicatorSceneObjectPart.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFD61695C6B1004C8276 /* GLVUMeterPeakIndicatorSceneObjectPart.m */; };
 		CEF1AFDA1695C6EA004C8276 /* GLVUMeterPeakIndicatorMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFD91695C6E3004C8276 /* GLVUMeterPeakIndicatorMesh.m */; };
 		CEF1AFDD1695C9F7004C8276 /* GLVUMeterAtlas.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF1AFDC1695C9F3004C8276 /* GLVUMeterAtlas.png */; };
+		CEF1AFE4169749A2004C8276 /* GLStereoVUMeterVisualizerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1AFE3169749A2004C8276 /* GLStereoVUMeterVisualizerScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +145,8 @@
 		CEF1AFD91695C6E3004C8276 /* GLVUMeterPeakIndicatorMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVUMeterPeakIndicatorMesh.m; sourceTree = "<group>"; };
 		CEF1AFDB1695C70E004C8276 /* VUPeakIndicatorMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VUPeakIndicatorMesh.h; sourceTree = "<group>"; };
 		CEF1AFDC1695C9F3004C8276 /* GLVUMeterAtlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GLVUMeterAtlas.png; sourceTree = "<group>"; };
+		CEF1AFE2169749A2004C8276 /* GLStereoVUMeterVisualizerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLStereoVUMeterVisualizerScene.h; sourceTree = "<group>"; };
+		CEF1AFE3169749A2004C8276 /* GLStereoVUMeterVisualizerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLStereoVUMeterVisualizerScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +324,8 @@
 				CEF1AFDC1695C9F3004C8276 /* GLVUMeterAtlas.png */,
 				CEF1AFA116945F56004C8276 /* GLVUMeterVisualizerScene.h */,
 				CEF1AFA216945F56004C8276 /* GLVUMeterVisualizerScene.m */,
+				CEF1AFE2169749A2004C8276 /* GLStereoVUMeterVisualizerScene.h */,
+				CEF1AFE3169749A2004C8276 /* GLStereoVUMeterVisualizerScene.m */,
 				CEF1AFA416945F91004C8276 /* GLVUMeterVisualizerSceneObject.h */,
 				CEF1AFA516945F91004C8276 /* GLVUMeterVisualizerSceneObject.m */,
 				CEF1AFC01695C18F004C8276 /* GLVUMeterPlateSceneObjectPart.h */,
@@ -447,6 +452,7 @@
 				CEF1AFD31695C55C004C8276 /* GLVUMeterCoverMesh.m in Sources */,
 				CEF1AFD71695C6B9004C8276 /* GLVUMeterPeakIndicatorSceneObjectPart.m in Sources */,
 				CEF1AFDA1695C6EA004C8276 /* GLVUMeterPeakIndicatorMesh.m in Sources */,
+				CEF1AFE4169749A2004C8276 /* GLStereoVUMeterVisualizerScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
