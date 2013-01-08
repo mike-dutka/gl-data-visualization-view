@@ -5,6 +5,12 @@
 //  Created by mike-dutka on 12/12/2012.
 //  Copyright (c) 2012 Mike Dutka. All rights reserved.
 //
+//  short input data description
+//
+//  float val = 0.0;
+//  //0.0 <= val <= 1.0
+//  NSValue* v = [NSValue value:&val withObjCType:@encode(float)];
+//  glView.dataValues = [NSArray arrayWithObject:v];
 
 #import "GLAnalogMeterVisualizerScene.h"
 #import "GLAnalogMeterPlateSceneObject.h"

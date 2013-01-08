@@ -19,6 +19,9 @@
     return self;
 }
 
+/**
+ * anarray with scene objects should be initialized there
+ */
 -(void)initSceneObjects{
     self.sceneObjects = nil;
 }
@@ -44,6 +47,9 @@
     [[self.sceneObjects objectAtIndex:index] performSelector:@selector(updateWithDataValue:) withObject:[self.dataValues objectAtIndex:index]];
 }
 
+/**
+ * required size for projection matrix
+ */
 -(CGSize)requiredProjectionSize{
     return CGSizeMake(2., 1.);
 }

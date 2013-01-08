@@ -51,6 +51,10 @@ Note that setting the view non-opaque will only work if the EAGL surface has an 
 * visualizationView.dataValues = ma;
 */
 @property(nonatomic, strong) NSArray* dataValues;
+/**
+ * selects data visualization scene type.
+ * All possible types are presented in GLVisualizationStylesRegistry.h
+ */
 @property(atomic, strong) NSString* visualizationStyle;
 @property(nonatomic, assign) GLDataVisualizationViewContentMode visualizationContentMode;
 @end

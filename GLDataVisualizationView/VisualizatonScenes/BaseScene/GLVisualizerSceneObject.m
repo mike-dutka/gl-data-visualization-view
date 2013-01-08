@@ -29,6 +29,9 @@
     return self;
 }
 
+/**
+ * mesh object class, used for rendering 
+ */
 - (Class)mesh{
     return [GLVisualizerMesh class];
 }

@@ -5,6 +5,12 @@
 //  Created by mac-admin on 02/01/2013.
 //  Copyright (c) 2013 Mike Dutka. All rights reserved.
 //
+//  short input data description
+//
+//  float val = 0.0;
+//  //0.0 <= val <= 1.0
+//  NSValue* v = [NSValue value:&val withObjCType:@encode(float)];
+//  glView.dataValues = [NSArray arrayWithObject:v];
 
 #import "GLVUMeterVisualizerScene.h"
 #import "GLVUMeterVisualizerSceneObject.h"
