@@ -17,6 +17,12 @@ typedef enum{
     GLDataVisualizationViewContentModeScaleToFit
 }GLDataVisualizationViewContentMode;
 
+typedef enum{
+    GLDataVisualizationViewStateAnimationPausing,
+    GLDataVisualizationViewStateAnimationPaused,
+    GLDataVisualizationViewStateAnimationRunning
+}GLDataVisualizationViewState;
+
 /*
 This class wraps the CAEAGLLayer from CoreAnimation into a convenient UIView subclass.
 The view content is basically an EAGL surface you render your OpenGL scene into.
@@ -57,4 +63,7 @@ Note that setting the view non-opaque will only work if the EAGL surface has an 
  */
 @property(atomic, strong) NSString* visualizationStyle;
 @property(nonatomic, assign) GLDataVisualizationViewContentMode visualizationContentMode;
+
+-(void)pauseVisualization;
+-(void)resumeVisualization;
 @end

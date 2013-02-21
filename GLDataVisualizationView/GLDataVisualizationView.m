@@ -16,6 +16,7 @@
 // A class extension to declare private methods
 @interface GLDataVisualizationView (){
     GLVisualizerSceneController* sceneController;
+    GLDataVisualizationViewState state;
 }
 
 @property (nonatomic, retain) EAGLContext *context;
@@ -158,7 +159,14 @@
 -(void)finishDraw
 {
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
-	[context presentRenderbuffer:GL_RENDERBUFFER_OES];	
+	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
+	
+    if (state == GLDataVisualizationViewStateAnimationPausing) {
+        glFinish();
+        [sceneController stopAnimation];
+        state = GLDataVisualizationViewStateAnimationPaused;
+    }
+    
 }
 
 - (void)layoutSubviews 
@@ -208,6 +216,19 @@
     if(depthRenderbuffer) {
         glDeleteRenderbuffersOES(1, &depthRenderbuffer);
         depthRenderbuffer = 0;
+    }
+}
+
+-(void)pauseVisualization{
+    if(state == GLDataVisualizationViewStateAnimationRunning){
+        state = GLDataVisualizationViewStateAnimationPausing;
+    }
+}
+
+-(void)resumeVisualization{
+    if(state == GLDataVisualizationViewStateAnimationPaused){
+        [sceneController startAnimation];
+        state = GLDataVisualizationViewStateAnimationRunning;
     }
 }
 
