@@ -11,7 +11,7 @@
 
 #import "GLVUMeterNeedleSceneObjectPart.h"
 #import "GLVUMeterPeakIndicatorSceneObjectPart.h"
-#import "GLVUMeterCoverSceneObjectPart.m"
+#import "GLVUMeterCoverSceneObjectPart.h"
 
 @implementation GLVUMeterPlateSceneObjectPart
 -(Class)mesh{
