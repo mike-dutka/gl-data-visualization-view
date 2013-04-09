@@ -22,15 +22,15 @@
 
 -(void)initSceneObjects{
     GLVUMeterVisualizerSceneObject* l = [[[GLVUMeterVisualizerSceneObject alloc] init] autorelease];
-    l.position = GLPointAdd(l.position, -1.6, -0.5, 0.);
+    l.position = GLPointAdd(l.position, -1.51, -0.5, 0.);
     
     GLVUMeterVisualizerSceneObject* r = [[[GLVUMeterVisualizerSceneObject alloc] init] autorelease];
-    r.position = GLPointAdd(r.position, 0.1, -0.5, 0.);
+    r.position = GLPointAdd(r.position, 0.01, -0.5, 0.);
     
     self.sceneObjects = [NSArray arrayWithObjects:l, r, nil];
 }
 
 -(CGSize)requiredProjectionSize{
-    return CGSizeMake(3.4, 1.);
+    return CGSizeMake(3.02, 1.);
 }
 @end

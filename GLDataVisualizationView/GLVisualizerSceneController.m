@@ -40,7 +40,7 @@
 
 -(void) startScene
 {
-	self.animationInterval = 1.0/25.0;
+	animationInterval = 1.0/25.0;
 	[self startAnimation];
 }
 

@@ -18,8 +18,8 @@ typedef enum{
 }GLDataVisualizationViewContentMode;
 
 typedef enum{
-    GLDataVisualizationViewStateAnimationPausing,
     GLDataVisualizationViewStateAnimationPaused,
+    GLDataVisualizationViewStateAnimationPausing,
     GLDataVisualizationViewStateAnimationRunning
 }GLDataVisualizationViewState;
 
