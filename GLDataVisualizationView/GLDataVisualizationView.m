@@ -20,6 +20,7 @@
 }
 
 @property (nonatomic, retain) EAGLContext *context;
+@property (atomic, assign) GLDataVisualizationViewState state;
 -(id)initializeView;
 - (void)beginDraw;
 - (void)finishDraw;
@@ -39,6 +40,7 @@
 @dynamic dataValues;
 @dynamic visualizationStyle;
 @synthesize visualizationContentMode;
+@synthesize state;
 
 
 // You must implement this method
@@ -84,6 +86,14 @@
     if (self.window) {
         [sceneController loadScene];
         [sceneController startScene];
+        
+        //subscribing for application state notifications in order to 
+        //automatically pause (on app entering background)
+        //and resume animation on application enter in it's active state
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pauseVisualization) name:UIApplicationDidEnterBackgroundNotification object:nil];
+
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resumeVisualization) name:UIApplicationDidBecomeActiveNotification object:nil];
+        //
     }
 }
 
@@ -158,18 +168,13 @@
 
 -(void)finishDraw
 {
-	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
-	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
-	
-    if (state == GLDataVisualizationViewStateAnimationPausing) {
-        glFinish();
-        [sceneController stopAnimation];
-        state = GLDataVisualizationViewStateAnimationPaused;
+    if(self.state == GLDataVisualizationViewStateAnimationRunning){
+        glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
+        [context presentRenderbuffer:GL_RENDERBUFFER_OES];
     }
-    
 }
 
-- (void)layoutSubviews 
+- (void)layoutSubviews
 {
 	[EAGLContext setCurrentContext:context];
 	[self destroyFramebuffer];
@@ -220,15 +225,18 @@
 }
 
 -(void)pauseVisualization{
-    if(state == GLDataVisualizationViewStateAnimationRunning){
-        state = GLDataVisualizationViewStateAnimationPausing;
+    if(self.state == GLDataVisualizationViewStateAnimationRunning){
+        self.state = GLDataVisualizationViewStateAnimationPausing;
+        glFinish();
+        [sceneController stopAnimation];
+        self.state = GLDataVisualizationViewStateAnimationPaused;
     }
 }
 
 -(void)resumeVisualization{
-    if(state == GLDataVisualizationViewStateAnimationPaused){
+    if(self.state == GLDataVisualizationViewStateAnimationPaused){
         [sceneController startAnimation];
-        state = GLDataVisualizationViewStateAnimationRunning;
+        self.state = GLDataVisualizationViewStateAnimationRunning;
     }
 }
 
