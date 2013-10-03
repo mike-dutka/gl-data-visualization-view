@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20974E0017FD79760083332A /* GLVUMeterCoverSceneObjectPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 20974DFF17FD79760083332A /* GLVUMeterCoverSceneObjectPart.m */; };
 		CE072EB8166CD2360085A540 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE072EB7166CD2360085A540 /* UIKit.framework */; };
 		CE072EBA166CD2360085A540 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE072EB9166CD2360085A540 /* Foundation.framework */; };
 		CE072EBC166CD2360085A540 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE072EBB166CD2360085A540 /* CoreGraphics.framework */; };
@@ -56,6 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20974DFF17FD79760083332A /* GLVUMeterCoverSceneObjectPart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GLVUMeterCoverSceneObjectPart.m; path = ../GLDataVisualizationView/VisualizatonScenes/GLVUMeterVisualizerScene/GLVUMeterCoverSceneObjectPart.m; sourceTree = "<group>"; };
 		CE072EB3166CD2360085A540 /* SoundVisualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundVisualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE072EB7166CD2360085A540 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE072EB9166CD2360085A540 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -169,6 +171,7 @@
 		CE072EA8166CD2360085A540 = {
 			isa = PBXGroup;
 			children = (
+				20974DFF17FD79760083332A /* GLVUMeterCoverSceneObjectPart.m */,
 				CE072EBD166CD2360085A540 /* SoundVisualizer */,
 				CE072EB6166CD2360085A540 /* Frameworks */,
 				CE072EB4166CD2360085A540 /* Products */,
@@ -420,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20974E0017FD79760083332A /* GLVUMeterCoverSceneObjectPart.m in Sources */,
 				CE072EC4166CD2360085A540 /* main.m in Sources */,
 				CE072EC8166CD2360085A540 /* AppDelegate.m in Sources */,
 				CE072ED1166CD2360085A540 /* ViewController.m in Sources */,

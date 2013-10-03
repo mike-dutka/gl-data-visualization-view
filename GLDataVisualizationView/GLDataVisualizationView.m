@@ -76,6 +76,12 @@
         return nil;
     }
     
+    // Adjust for retina displays
+    if ([self respondsToSelector:@selector(setContentScaleFactor:)])
+    {
+        self.contentScaleFactor = [[UIScreen mainScreen] scale];
+    }
+    
     sceneController = [GLVisualizerSceneController sharedSceneController];
     sceneController.openGLView = self;
     sceneController.scene = [GLVisualizationStyleManager getVisualizerSceneWtihStyle:self.visualizationStyle];
