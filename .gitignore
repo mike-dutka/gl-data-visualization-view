@@ -26,3 +26,7 @@ IPhone_sample/SoundVisualizer.xcodeproj/xcuserdata/mike-dutka.xcuserdatad/xcsche
 IPhone_sample/SoundVisualizer.xcodeproj/xcuserdata/mike.xcuserdatad/xcschemes/SoundVisualizer.xcscheme
 
 IPhone_sample/SoundVisualizer.xcodeproj/xcuserdata/mike.xcuserdatad/xcschemes/xcschememanagement.plist
+
+*.xcscheme
+
+IPhone_sample/SoundVisualizer.xcodeproj/xcuserdata/mykhaylo.dutka.xcuserdatad/xcschemes/xcschememanagement.plist
